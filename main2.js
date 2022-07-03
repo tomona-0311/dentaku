@@ -1,4 +1,5 @@
-let element = document.getElementById("result")
+let result = document.getElementById("result")
+let 
 function clickbutton(button){
     let target_value = button.innerHTML;
     if(target_value == "AC"){
