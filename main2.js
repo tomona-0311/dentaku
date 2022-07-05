@@ -1,7 +1,22 @@
+
+
+
+
+
+
+
 let result = document.getElementById("result");
-function clickbutton(button){
-    let target_value = button.innerHTML;
+
+
+function clickbutton (button){
+  
+    
+ result.innerHTML = "クリア"
+ console.log(result);
+}
+   /* let target_value =result.innerHTML;
     if(target_value == "AC"){
+        console.log("クリア")
         result.innerHTML ="0"
         console.log("0");
     }else if (target_value == "="){
@@ -9,7 +24,8 @@ function clickbutton(button){
         consolw.log("計算");
     }else{
         if(result.innerHTML=="0"){
-            result.innerHTML = target_value
+            console.log("0の時の対応");
+            result.innerHTML = 
             console.log("0の時の対応");
         }else{
             result.innerHTML += target_value
@@ -18,7 +34,7 @@ function clickbutton(button){
 }
 
 }
-
+*/
 
 
 
