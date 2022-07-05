@@ -10,7 +10,7 @@ let result = document.getElementById("result");
 
 function clickbutton (button){
   
-    
+console.log(result);
  result.innerHTML = "クリア"
  console.log(result);
 }
