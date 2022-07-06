@@ -5,28 +5,30 @@
 
 
 
-let result = document.getElementById("result");
 
 
 function clickbutton (button){
-  
-console.log(result);
- result.innerHTML = "クリア"
+let result = document.getElementById("result");
+
+/*問題なくconsole.logは動く
+console.log(button) ;
  console.log(result);
-}
-   /* let target_value =result.innerHTML;
+ result.innerHTML += result.innerHTML
+*/
+
+    let target_value =button.innerHTML;
     if(target_value == "AC"){
         console.log("クリア")
         result.innerHTML ="0"
         console.log("0");
     }else if (target_value == "="){
         result.innerHTML = eval(result.innerHTML)
-        consolw.log("計算");
+        console.log("計算");
     }else{
         if(result.innerHTML=="0"){
             console.log("0の時の対応");
-            result.innerHTML = 
-            console.log("0の時の対応");
+            result.innerHTML = target_value
+            console.log("0の時の対応パート２");
         }else{
             result.innerHTML += target_value
             console.log("計算完了");
@@ -34,7 +36,7 @@ console.log(result);
 }
 
 }
-*/
+
 
 
 
