@@ -20,22 +20,23 @@ console.log(button) ;
     }else{
         if(result.innerHTML=="0"){
             console.log("0の時の対応");
+            
             result.innerHTML = target_value
             console.log("0の時の対応パート２");
         }else{
             result.innerHTML += target_value
             console.log("計算完了");
         }
-       
+   
 
 
-//const operate = 　document.getElementsByClassName('operator')←演算子のクラス名;
+//const operate = 　document.getElementsByClassName('operate')←演算子のクラス名;
 let operate =　document.getElementsByClassName('operate')
- function edit (button){
+ function edit (operate){
  if (result.innerHTML.slice(-1) === "+" ){
             
-          
-           return;
+        
+          result.innerHTML = operate;
            
         }else if(result.innerHTML.slice(-1) === "-" ){
             return;
@@ -47,7 +48,7 @@ let operate =　document.getElementsByClassName('operate')
               return; 
               console.log("クリア")
           }else{
-            result.innerHTML += target_value
+            result.innerHTML += operate
             console.log("計算完了");
         }
        
