@@ -33,7 +33,7 @@ console.log(button) ;
 
 let edit = function (){
     let operate  =　document.getElementsByClassName('operate')
-    let target_value = operate.innerHTML;
+    //let target_value = operate.innerHTML;
   operate.innerHTML = edit.innerHTML;
    console.log("edit")
    
@@ -50,7 +50,7 @@ else if(result.innerHTML.slice(-1) === "/" ){
         　 return; 
              console.log("クリア")
 }else{
-        result.innerHTML += target_value
+        result.innerHTML += operate.innerHTML
             console.log("計算完了");
         } 
 }
