@@ -8,16 +8,14 @@ console.log(button) ;
  result.innerHTML += result.innerHTML
 */
 
-   
-
-    if(target_value =="AC"){
+ if(target_value =="AC"){
         console.log("クリア")
         result.innerHTML ="0"
         console.log("0");
-    }else if (target_value == "="){
+ }else if (target_value == "="){
         result.innerHTML = eval(result.innerHTML)
         console.log("計算");
-    }else{
+  }else{
         if(result.innerHTML=="0"){
             console.log("0の時の対応");
             
@@ -28,15 +26,18 @@ console.log(button) ;
             console.log("計算完了");
         }
    
-
+}}
 
 //const operate = 　document.getElementsByClassName('operate')←演算子のクラス名;
 let operate =　document.getElementsByClassName('operate')
  function edit (operate){
- if (result.innerHTML.slice(-1) === "+" ){
+   let element = edit.innerHTML;
+   console.log("edit")
+  alert("成功");
+  if (result.innerHTML.slice(-1) === "+" ){
             
-        
-          result.innerHTML = operate;
+        return;
+          
            
         }else if(result.innerHTML.slice(-1) === "-" ){
             return;
@@ -50,9 +51,9 @@ let operate =　document.getElementsByClassName('operate')
           }else{
             result.innerHTML += operate
             console.log("計算完了");
-        }
+        } 
        
-}}}
+}
 
 //let operate  = result.innerHTML;
 // 末尾から2文字を削除
@@ -73,3 +74,7 @@ let operate =　document.getElementsByClassName('operate')
  //console.log(button.value); }
 //</script>
 
+/* 追加 
+function edit() {
+  console.log('edit')
+}*/
