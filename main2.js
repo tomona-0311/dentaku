@@ -7,7 +7,6 @@ console.log(button) ;
  console.log(result);
  result.innerHTML += result.innerHTML
 */
-
  if(target_value =="AC"){
         console.log("クリア")
         result.innerHTML ="0"
@@ -15,44 +14,45 @@ console.log(button) ;
  }else if (target_value == "="){
         result.innerHTML = eval(result.innerHTML)
         console.log("計算");
-  }else{
+ }else{
         if(result.innerHTML=="0"){
             console.log("0の時の対応");
             
             result.innerHTML = target_value
             console.log("0の時の対応パート２");
-        }else{
+}else{
             result.innerHTML += target_value
             console.log("計算完了");
         }
-   
 }}
 
+
+
+
 //const operate = 　document.getElementsByClassName('operate')←演算子のクラス名;
-let operate =　document.getElementsByClassName('operate')
- function edit (operate){
-   let element = edit.innerHTML;
+
+let edit = function (){
+    let operate  =　document.getElementsByClassName('operate')
+    let target_value = operate.innerHTML;
+  operate.innerHTML = edit.innerHTML;
    console.log("edit")
-  alert("成功");
+   
   if (result.innerHTML.slice(-1) === "+" ){
-            
+      console.log("＋");
         return;
-          
-           
-        }else if(result.innerHTML.slice(-1) === "-" ){
+}else if(result.innerHTML.slice(-1) === "-" ){
             return;
         }
-        else if(result.innerHTML.slice(-1) === "*" ){
-             return;
+else if(result.innerHTML.slice(-1) === "*" ){
+            return;
         }
-          else if(result.innerHTML.slice(-1) === "/" ){
-              return; 
-              console.log("クリア")
-          }else{
-            result.innerHTML += operate
+else if(result.innerHTML.slice(-1) === "/" ){
+        　 return; 
+             console.log("クリア")
+}else{
+        result.innerHTML += target_value
             console.log("計算完了");
         } 
-       
 }
 
 //let operate  = result.innerHTML;
