@@ -34,27 +34,28 @@ console.log(button) ;
 function edit (button){
     let operate  =　document.getElementsByClassName('operate')
     //let target_value = operate.innerHTML;
-  operate.innerHTML = edit.innerHTML;
+ // operate.innerHTML = edit.innerHTML;
    console.log(button);
 
-  if (button.innerHTML.slice(-1) === "+" ){
-   result.innerHTML += button.innerHTML;
-   return;
+  if (result.innerHTML.slice(-1) === "+" ){
       console.log("＋");
+   
+   return;
+    
         
-}else if(button.innerHTML.slice(-1) === "-" ){
+}else if(result.innerHTML.slice(-1) === "-" ){
            console.log("-")
             return;
         }
-else if(button.innerHTML.slice(-1) === "*" ){
+else if(result.innerHTML.slice(-1) === "*" ){
              console.log("*")
             return;
         }
-else if(button.innerHTML.slice(-1) === "/" ){
+else if(result.innerHTML.slice(-1) === "/" ){
 console.log("/")
         　 return; 
             
-}else{button.innerHTML += result.innerHTML
+}else{result.innerHTML += button.innerHTML
             console.log("計算完了");
         } 
 }
