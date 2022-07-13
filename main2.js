@@ -38,6 +38,8 @@ function edit (button){
    console.log(button);
 
   if (button.innerHTML.slice(-1) === "+" ){
+   result.innerHTML += button.innerHTML;
+   return;
       console.log("＋");
         
 }else if(button.innerHTML.slice(-1) === "-" ){
@@ -52,7 +54,7 @@ else if(button.innerHTML.slice(-1) === "/" ){
 console.log("/")
         　 return; 
             
-}else{button.innerHTML += operate.innerHTML
+}else{button.innerHTML += result.innerHTML
             console.log("計算完了");
         } 
 }
