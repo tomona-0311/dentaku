@@ -31,26 +31,28 @@ console.log(button) ;
 
 //const operate = 　document.getElementsByClassName('operate')←演算子のクラス名;
 
-let edit = function (){
+function edit (button){
     let operate  =　document.getElementsByClassName('operate')
     //let target_value = operate.innerHTML;
   operate.innerHTML = edit.innerHTML;
-   console.log("edit")
-   
-  if (result.innerHTML.slice(-1) === "+" ){
+   console.log(button);
+
+  if (button.innerHTML.slice(-1) === "+" ){
       console.log("＋");
-        return;
-}else if(result.innerHTML.slice(-1) === "-" ){
+        
+}else if(button.innerHTML.slice(-1) === "-" ){
+           console.log("-")
             return;
         }
-else if(result.innerHTML.slice(-1) === "*" ){
+else if(button.innerHTML.slice(-1) === "*" ){
+             console.log("*")
             return;
         }
-else if(result.innerHTML.slice(-1) === "/" ){
+else if(button.innerHTML.slice(-1) === "/" ){
+console.log("/")
         　 return; 
-             console.log("クリア")
-}else{
-        result.innerHTML += operate.innerHTML
+            
+}else{button.innerHTML += operate.innerHTML
             console.log("計算完了");
         } 
 }
