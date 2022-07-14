@@ -2,11 +2,6 @@ let result = document.getElementById("result");
 
 function clickbutton (button){
  let target_value = button.innerHTML;
-/*問題なくconsole.logは動く
-console.log(button) ;
- console.log(result);
- result.innerHTML += result.innerHTML
-*/
  if(target_value =="AC"){
         console.log("クリア")
         result.innerHTML ="0"
@@ -26,23 +21,12 @@ console.log(button) ;
         }
 }}
 
-
-
-
-//const operate = 　document.getElementsByClassName('operate')←演算子のクラス名;
-
-function edit (button){
+function edit(button){
     let operate  =　document.getElementsByClassName('operate')
-    //let target_value = operate.innerHTML;
- // operate.innerHTML = edit.innerHTML;
    console.log(button);
-
   if (result.innerHTML.slice(-1) === "+" ){
       console.log("＋");
-   
    return;
-    
-        
 }else if(result.innerHTML.slice(-1) === "-" ){
            console.log("-")
             return;
@@ -54,32 +38,9 @@ else if(result.innerHTML.slice(-1) === "*" ){
 else if(result.innerHTML.slice(-1) === "/" ){
 console.log("/")
         　 return; 
-            
-}else{result.innerHTML += button.innerHTML
+}
+else{result.innerHTML += button.innerHTML
             console.log("計算完了");
         } 
 }
 
-//let operate  = result.innerHTML;
-// 末尾から2文字を削除
-//var b = str.slice( 0, -2 ) ;
-
-//let get_calc = function (button){
-//console.log("button.value");
-  
-//  let target_value =  get_calc.innerHTML
-//}
-// 関数の引数にthisを指定して記述する方法。
-
-//<input type="button" value="ボタン" onclick="push(this)">
-
-//<script>
-
-// let push = function (button) {
- //console.log(button.value); }
-//</script>
-
-/* 追加 
-function edit() {
-  console.log('edit')
-}*/
